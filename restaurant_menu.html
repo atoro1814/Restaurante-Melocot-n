@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Restaurante Melocotón</title>
+        
+        <style>
+            h1 ,h2,h3 {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul{
+                list-style-type: none;
+                text-decoration: none;
+            }
+            li{
+                display: inline;
+            }
+            .enlaces_nav{
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                
+            }
+            #seccion_navegacion{
+                background-color: #FFDAB9;
+                padding: 10px;
+            }
+            .articulos_menu{
+            
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .img_menu{
+                border-radius: 10px;
+                height: 200px;
+            }
+
+            body{
+                text-align: center;
+            }
+            footer{
+                background-color: #FFDAB9;
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://png.pngtree.com/png-clipart/20230911/original/pngtree-cartoon-character-peach-with-big-eyes-and-big-eyes-with-a-png-image_11049030.png" height="150px" id="header-img" alt="Logo Restaurant">
+            <h1>Restaurant Melocotón</h1>
+            <nav id="seccion_navegacion">
+                <ul>
+                    <li><a href="#menu" class="enlaces_nav">Menu</a></li>
+                    <li><a href="#order-form" class="enlaces_nav">Place Your Order</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br><br>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <br>
+                <!--Articulo 1-->
+                <article class="articulos_menu">
+                    <img src="https://i.pinimg.com/736x/67/6a/29/676a29d34af3ebf40ddff9d670ef2759.jpg" class="img_menu" alt="Image of Tagliatelle with Bolognese Sauce">
+                    <h3>Tagliatelle with Bolognese Sauce</h3>
+                    <p>A classic Italian dish composed of long, thin pasta accompanied by a thick sauce made with ground meat, tomato, onion, and aromatic spices. Price <em>$12.99</em> </p>
+                </article>
+                <br>
+                <!--Articulo 2-->
+                <article class="articulos_menu">
+                    <img src="https://i.pinimg.com/736x/92/ad/03/92ad03ae1fcbc8bc94c3cc7570e0dbc6.jpg"  class="img_menu" alt="Image of Pizza Napolitana">
+                    <h3>Pizza Napolitana</h3>
+                    <p>A traditional pizza with a soft and fluffy dough base, topped with tomato sauce, fresh mozzarella and basil leaves, representing the authentic flavors of Naples. Price <em>$14.49</em></p>
+                </article>
+                <br>
+                <!--Articulo 3-->
+                <article class="articulos_menu">
+                    <img src="https://i.pinimg.com/736x/84/03/8d/84038d5941d43c04cb6649099a316ffa.jpg"  class="img_menu" alt="Image of Ravioli">
+                    <h3>Ravioli</h3>
+                    <p>Small packages of pasta filled with ingredients such as cheese, spinach or meat, typically served with a variety of sauces, such as tomato, cream or butter. Price <em>$13.25</em></p>
+                </article>
+            </section>
+            <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section id="formulario">
+                <h2 id="order-form">Place Your Order</h2>
+                <br>
+                <form>
+                    Select the number of dishes you want:<br>
+                    <label for="tallarines">
+                        
+                        Tagliatelle with Bolognese Sauce <input type="number" id="tallarines" name="tallarines" required min="0">
+                    </label>
+                    <br>
+                    <label for="pizza">
+                        Pizza Napolitana: <input type="number" id="pizza" name="pizza" required min="0">
+                    </label>
+                    <br>
+                    <label for="ravioli">
+                        Ravioli: <input type="number" id="ravioli" name="ravioli" required min="0">
+                    </label>
+                    <br>
+                    <br>
+
+                    <label for="Complementos">Which Complements do you want: 
+                        <input type="checkbox"> Drink
+                        <input type="checkbox"> French Fries
+                        <input type="checkbox"> BBQ Sauce
+                        <br>
+                    </label>
+                    <br><br>
+                    <label>
+                        Special Request: 
+                        <br>
+                        <textarea name="peticion" id="peticion" cols="50" maxlength="250"></textarea>
+                    </label>
+                    <br><br>
+                    <input type="submit" value="Go to Checkout">
+                </form>
+            </section>
+        </main>
+        <br><br>
+        <footer>
+            <p>Made with love by Atoro</p>
+        </footer>
+        
+    </body>
+</html>
